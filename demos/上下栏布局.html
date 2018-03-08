@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>html{height:100%}html,body{width:100%;margin:0}body{position:relative;padding:44px 0 25px;min-height:100%;box-sizing:border-box}.header,.footer{position:absolute}.header{height:44px;width:100%;background-color:#333;top:0;left:0}.main{width:100%}.main p{margin:0;line-height:3em;font-size:1.5em}.footer{height:25px;width:100%;background-color:#333;bottom:0;left:0}</style>
+</head>
+
+<body>
+	<header class="header">
+
+	</header>
+	<main class="main">
+		<p>1111</p><button onclick="tiggle()">点我查看效果</button>
+		<div class="other">
+			<p>1111</p>
+			<p>1111</p>
+			<p>1111</p>
+			<p>1111</p>
+			<p>1111</p>
+			<p>1111</p>
+			<p>1111</p>
+			<p>1111</p>
+			<p>1111</p>
+			<p>1111</p>
+			<p>1111</p>
+			<p>1111</p>
+			<p>1111</p>
+			<p>1111</p>
+			<p>1111</p>
+		</div>
+		<span>一定注意最后一行有没有被footer盖住</span>
+	</main>
+	<footer class="footer">
+
+	</footer>
+	<script>
+	function tiggle() {
+		const other = document.getElementsByClassName('other')[0];
+		if (other.style.display === 'none') {
+			other.removeAttribute('style');
+		} else {
+			other.style.display = 'none';
+		}
+	}	
+	</script>
+</body>
+
+</html>

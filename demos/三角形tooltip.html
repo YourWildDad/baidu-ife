@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #demo {
+            height: 100px;
+            width: 100px;
+            border: 2px solid #000;
+            background-color: #fff;
+            position: relative;
+        }
+
+        #demo::before,
+        #demo::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 20px;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid;
+        }
+
+        #demo:before {
+            border-left-color: #000;
+            right: -11px;
+        }
+
+        #demo:after {
+            border-left-color: #fff;
+            right: -9px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo"></div>
+</body>
+
+</html>
